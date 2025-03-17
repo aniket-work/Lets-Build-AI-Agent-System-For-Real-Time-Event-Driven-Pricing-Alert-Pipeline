@@ -1,0 +1,30 @@
+{
+    "application": {
+        "name": "AI Pricing Monitor",
+        "version": "1.0.0",
+        "description": "Real-time competitor price monitoring with AI-powered analysis"
+    },
+    "api": {
+        "openai": {
+            "base_url": "https://api.openai.com",
+            "health_check_url": "https://api.openai.com",
+            "timeout": 30
+        }
+    },
+    "monitoring": {
+        "categories": ["electronics", "appliances", "smart home"],
+        "price_drop_threshold": 0.05,
+        "refresh_interval": 1.0
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    },
+    "simulation": {
+        "enabled": true,
+        "min_delay": 0.5,
+        "max_delay": 1.5,
+        "price_variation_min": 0.8,
+        "price_variation_max": 1.1
+    }
+}

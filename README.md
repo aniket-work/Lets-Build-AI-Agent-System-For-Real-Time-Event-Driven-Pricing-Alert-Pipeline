@@ -1,26 +1,29 @@
 # **Let's Build AI Agent System For Real-Time Event-Driven Pricing Alert Pipeline**
 
+Hands-on: Building an AI-Powered Real-Time Pricing Alert Pipeline for E-Commerce
 
 ## TL;DR
-I built an AI-powered onboarding assistant that guides new employees through their first days using natural language processing. The system answers HR questions using company documents, displays personalized schedules and checklists, and generates welcome emails — all through a simple command-line interface. By separating business logic from technical implementation, it’s easily adaptable to different organizations.
+This article demonstrates how to build and implement a real-time event-driven pricing alert pipeline powered by AI agents. The system monitors competitors’ prices across product categories like electronics, appliances, and smart home devices, then analyzes the data to trigger alerts when significant price discrepancies occur. Using a stack that includes Python, Streamlit, CrewAI, and LangChain, the pipeline enables businesses to respond quickly to market changes and maintain competitiveness in the dynamic e-commerce landscape
 
 ## Introduction:
-First day at job is overwhelming — paperwork everywhere, countless new systems to learn, and a calendar packed with orientation meetings. I remember thinking there had to be a better way. That’s when the idea struck me: what if we could build an intelligent assistant that guided employees through their first days while answering their questions instantly? No more hunting through outdated wikis or waiting for HR to respond to emails. This article walks through how I built exactly that — an AI-powered onboarding agent that makes the first week at a new job smoother for everyone involved.
+In today’s hypercompetitive e-commerce environment, pricing strategy can make or break a business. Companies need to stay informed about competitors’ pricing in real-time to remain competitive and protect their market share. However, manually monitoring prices across multiple products and competitors is time-consuming and error-prone.
+
+Automated pricing intelligence tools have become essential for modern e-commerce operations, but many existing solutions lack the nuanced decision-making capabilities that businesses need. This is where AI comes in — specifically, the ability to analyze pricing events contextually and generate targeted, actionable notifications.
+
+This article explores a sophisticated real-time pricing alert system that leverages AI agents to monitor market conditions, analyze pricing events, and deliver strategic recommendations to sales and product teams.
 
 ## What’s This Article About?
-This article explores the development of an AI onboarding system that serves as a virtual assistant for new employees. The system I built combines several powerful technologies into a practical tool that:
+This article provides a comprehensive walkthrough of an AI-powered pricing intelligence system that:
 
-- Answers employee questions by retrieving information from company documents using AI
--Displays personalized onboarding checklists showing progress through required tasks
-- Provides custom schedules for training and orientation activities
-- Shows role-specific learning resources tailored to each employee’s position
-- Generates personalized welcome emails with relevant information
+- Continuously monitors product pricing against competitors
+- Uses intelligent agents to analyze pricing disparities
+- Makes context-aware decisions about when to alert teams
+- Generates detailed, actionable notifications with strategic recommendations
+- Presents the information through an intuitive real-time dashboard
 
-The core of the system is a retrieval-augmented generation (RAG) pipeline that finds relevant information in company documents and uses a large language model to craft helpful responses. I designed it with a simple command-line interface where employees can type natural commands like “ask what is the vacation policy?” or “show my schedule” to get immediate assistance.
+We’ll explore the system architecture, decision-making process, implementation details, and real-world applications. By the end, you’ll understand how to build a similar system for your own e-commerce operations.
 
-What makes this system special is how it separates technical implementation from business content. HR teams can easily update onboarding schedules, checklists, and company information without touching any code, while the technical foundation remains stable and maintainable.
-
-Full Article : [https://medium.com/@learn-simplified/how-i-built-agentic-employee-onboarding-system-d830ac92293d
+Full Article : [https://medium.com/@learn-simplified/lets-build-ai-agent-system-for-real-time-event-driven-pricing-alert-pipeline-b484465be730
 
 
 ## Architecture
@@ -83,10 +86,6 @@ Follow these steps to set up and run the  "Let's Build AI Agent System For Real-
    
 ## Closing Thoughts
 
-The future of AI in business isn’t about replacing humans but augmenting them with tools that handle routine tasks while providing insights that would otherwise remain hidden. As large language models become more capable and specialized domain knowledge becomes easier to integrate, we’ll see AI assistants becoming integral to every business function.
+Creating this system required balancing technical complexity with practical business needs. The modular design makes it easy to extend — perhaps adding real competitor data sources instead of simulations, or expanding the AI analysis to include more nuanced pricing strategies. The event-driven architecture with queues ensures the system remains responsive even under load.
 
-Within the next few years, I expect onboarding systems like this one to evolve from text-based interfaces to multimodal experiences that include voice interaction, augmented reality walkthroughs of office spaces, and adaptive learning paths that adjust based on each employee’s progress and learning style.
-
-The most exciting developments will come from the data these systems collect. By analyzing patterns in questions asked, resources accessed, and time spent on different onboarding activities, companies will gain unprecedented insights into how to streamline the employee experience from day one.
-
-The businesses that thrive in the coming decade won’t be those that simply adopt AI tools, but those that thoughtfully integrate them into human workflows — creating systems where technology handles the routine while humans focus on creative, strategic, and interpersonal challenges. The onboarding system described in this article represents just one step in that broader journey.
+While this implementation focuses on e-commerce pricing, the pattern could be adapted for any domain requiring real-time monitoring and AI-powered decision making, from financial trading to infrastructure monitoring.
