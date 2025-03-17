@@ -1,0 +1,19 @@
+# AI agent prompt templates
+
+pricing_analysis_template: |
+  Analyze pricing event:
+  Product: {product_name}
+  Category: {category}
+  Our Price: ${our_price}
+  Competitor Price: ${competitor_price}
+
+  Should we alert teams? Consider:
+  1. Category in {desired_categories}?
+  2. Price drop > {price_drop_threshold}%?
+  Reply ONLY with 'ALERT' or 'IGNORE'
+
+notification_template: |
+  If ALERT, create notification message for:
+  - Sales Team
+  - Product Team
+  Include product details and recommended actions

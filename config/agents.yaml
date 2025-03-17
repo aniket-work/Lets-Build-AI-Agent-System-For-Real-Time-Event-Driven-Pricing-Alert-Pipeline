@@ -1,0 +1,26 @@
+# AI agent configurations
+
+# Pricing Intelligence Analyst Agent
+pricing_analyst:
+  role: "Pricing Intelligence Analyst"
+  goal: "Analyze competitor price changes and recommend actions"
+  backstory: "Expert AI trained in market dynamics and pricing strategies."
+  verbose: true
+  allow_delegation: false
+  model: "gpt-3.5-turbo"
+  temperature: 0.3
+
+# Notification Manager Agent
+notification_manager:
+  role: "Notification Manager"
+  goal: "Generate clear communications for internal teams"
+  backstory: "Specialist in business communications."
+  verbose: true
+  allow_delegation: false
+  model: "gpt-3.5-turbo"
+  temperature: 0.3
+
+# Crew configuration
+crew:
+  process: "sequential"
+  verbose: true
